@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Travel Website</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+  .bg-image {
+    background-image: url('black_krishna.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+  }
+
+  .navbar-custom {
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity to your liking */
+  }
+
+  .navbar-custom .navbar-brand,
+  .navbar-custom .navbar-nav .nav-link {
+    color: white;
+  }
+
+  .quote {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    width: 80%;
+    color: white;
+    font-size: 1.5rem;
+  }
+  .navbar-custom .navbar-nav .nav-link {
+    color: white; /* Normal state color */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+  }
+
+  .navbar-custom .navbar-nav .nav-link:hover,
+  .navbar-custom .navbar-nav .nav-link:focus { /* Added focus for accessibility */
+    color: #ffdd00; /* Hover state color */
+  }
+ 
+  /* ... other styles ... */
+  
+
+  .quote {
+    position: absolute;
+    top: 70%; /* Center vertically */
+    left: 40%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust positioning to the exact center */
+    width: 80%;
+    color: #e5e9ec; /* Change to your preferred text color */
+    font-size: 1.5rem;
+    text-align: center; /* Align text to the center */
+    font-family: 'Georgia', serif; /* Change to your preferred font */
+  }
+
+  /* ... other styles ... */
+
+
+</style>
+</head>
+<body>
+
+<div class="bg-image">
+  <nav class="navbar navbar-expand-sm navbar-custom">
+    <!-- <a class="navbar-brand" href="#">Logo</a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Destinations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#destinations">Destinations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="quote">
+    "Travel is the only thing you buy that makes you richer."
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
